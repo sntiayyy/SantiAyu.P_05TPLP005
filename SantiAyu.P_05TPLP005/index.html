@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+	<!-- My CSS -->
+	<link href="stylesistem.css" rel="stylesheet">
+	<title>Admin</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <img src="sann.jpg" alt="User profile picture" class="profile-pic">
+                <div class="user-info">
+                    <h2>Welcome, Santi Ayu</h2>
+                    <p>Administrator</p>
+                </div>
+            </header>
+            <nav class="sidebar-menu">
+                <a href="index.html" class="menu-item active">Dashboard</a>
+                <details class="menu-group">
+                    <summary class="menu-item">Menu Karyawan <i class="bx bx-chevron-down"></i></summary>
+                    <ul class="submenu">
+                        <li><a href="karyawan.html" class="submenu-item">Karyawan</a></li>
+                        <li><a href="Jabatan.html" class="submenu-item">Jabatan</a></li>
+                        <li><a href="Divisi.html" class="submenu-item">Divisi</a></li>
+                    </ul>
+                </details>
+                <details class="menu-group">
+                    <summary class="menu-item">Menu Absensi <i class="bx bx-chevron-down"></i></summary>
+                    <ul class="submenu">
+                        <li><a href="Absensi.html" class="submenu-item">Absensi</a></li>
+                        <li><a href="Izin.html" class="submenu-item">Izin</a></li>
+                        <li><a href="Lembur.html" class="submenu-item">Lembur</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1>Sistem Informasi Manajemen Karyawan</h1>
+                <h3>Admin Dashboard</h3>
+            </header>
+            <section class="stats">
+                <div class="card">
+                    <div class="icon bg-blue-400">
+                        <i class="bx bxs-user"></i>
+                    </div>
+                    <div class="info">
+                        <p>Data Pegawai</p>
+                        <p>7</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon bg-yellow-400">
+                        <i class="bx bxs-calendar-check"></i>
+                    </div>
+                    <div class="info">
+                        <p>Absensi Hari Ini</p>
+                        <p>7</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon bg-green-400">
+                        <i class="bx bx-check-circle"></i>
+                    </div>
+                    <div class="info">
+                        <p>Izin Menunggu Konfirmasi</p>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="icon bg-red-400">
+                        <i class="bx bx-check-circle"></i>
+                    </div>
+                    <div class="info">
+                        <p>Lembur Menunggu Konfirmasi</p>
+                        <p>1</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

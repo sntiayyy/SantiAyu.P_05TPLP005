@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style sistem.css">
+</head>
+
+<body>
+    <main class="grid grid-cols-12 gap-0">
+        <div class="flex h-screen flex-col justify-between border-e bg-white col-start-1 col-end-3">
+            <div class="px-4 py-6">
+
+                <span class="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
+                    sann
+                </span>
+
+                <ul class="mt-6 space-y-1">
+                    <li>
+                        <a href="index.html" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+
+                            <summary
+                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Karyawan</span>
+
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li>
+                                    <a href="karyawan.html"
+                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                        Karyawan
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Jabatan.html"
+                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                        Jabatan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Divisi.html"
+                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                        Divisi
+                                    </a>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+
+
+                    <details class="group [&_summary::-webkit-details-marker]:hidden">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                            <span class="text-sm font-medium"> Menu Absensi </span>
+
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+
+                        <ul class="mt-2 space-y-1 px-4">
+                            <li>
+                                <a href="Absensi.html"
+                                    class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                    Absensi
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="Izin.html"
+                                    class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                    Izin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Lembur.html"
+                                    class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                    Lembur
+                                </a>
+                            </li>
+                        </ul>
+                    </details>
+            </div>
+
+        </div>
+
+        <section class="col-start-3 col-end-13">
+
+            <!--
+Heads up! 👋
+
+This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+                <div class="bg-pink-500 h-[20vh] px-10 flex items-center">
+                    <h1 class="text-2xl text-white font-bold mb-4">
+                    Daftar Hadir Karyawan
+                    </h1>
+                </div>
+
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                    <thead class="ltr:text-left rtl:text-right">
+                        <tr>
+                            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Nama</th>
+                            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Tanggal</th>
+                            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Jam Masuk</th>
+                            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Jam Keluar</th>
+                            <th class="px-4 py-2"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Choi Seungceol</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:40</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Kim Mingyu</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2025</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:45</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Chwe Hansol</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:45</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Na Jaemin</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:35</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Eunha</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:30</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Jennie</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:30</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Karina</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">31/10/2024</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">07:30</td>
+                            <td class="whitespace-nowrap px-4 py-2 text-gray-700">16:00</td>
+                            <td class="whitespace-nowrap px-4 py-2">
+                                <a href="#"
+                                    class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
