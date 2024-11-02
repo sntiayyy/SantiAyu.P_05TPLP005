@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9ec2f8;
+}
+
+/* Container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #9ec2f8;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.user-info h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.user-info p {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.menu-item {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover, .menu-item.active {
+    background-color: #d7c1f5;
+    color: #333;
+}
+
+.submenu {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.submenu-item {
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.submenu-item:hover {
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    background-color: #cba8ec;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-header h3 {
+    font-size: 1.25rem;
+}
+
+/* Stats Section */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #a1d0eb;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.info {
+    margin-left: 1rem;
+}
+
+.info p {
+    margin: 0.25rem 0;
+}
+
+.info p:first-child {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.info p:last-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
